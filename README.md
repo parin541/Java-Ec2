@@ -25,13 +25,14 @@ Steps
 	
 3. Add Docker command in as Dockerfile as below
 	
-FROM openjdk:11              // It will insall automatic Open JDK 11
+FROM openjdk:11              // It will set the base image as Open JDK 11
 
-ARG JAR_FILE=target/*.jar
+ARG JAR_FILE=target/*.jar    // It will create argument as JAR_FILE with value 'target/*,jar'
 
-COPY ${JAR_FILE} app.jar       //It will copy the jar file from target directory
+COPY ${JAR_FILE} app.jar       //This instruction copies the JAR file specified by the JAR_FILE argument from the local file system into the Docker image with the name app.jar.
 
-ENTRYPOINT ["java","-jar","/app.jar"]                  // It will start applcation
+ENTRYPOINT ["java","-jar","/app.jar"]  // This instruction specifies the default command to be run when a container is started from the image. It executes the Java JAR file using the java -jar command.
+                                       // The ENTRYPOINT sets the entry point for the container. In this case, it runs the Java application by executing the JAR file.
 
 	
 4. Go to pom.xml and add required dependacny for 'dockerfile-maven-plugin' in build section.

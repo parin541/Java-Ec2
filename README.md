@@ -1,13 +1,17 @@
-# Java-Ec2
-Prerequisite:
+********************************************************************************************************
+********************************************************************************************************
+Dockerize Spring Boot App using Maven Plugin and Deploy Spring Boot Application with Docker into AWS EC2 
+********************************************************************************************************
+********************************************************************************************************
+
+Prerequisites:
 
 1. Already installed Docker Desktop and requierd in runnnig mode.
 2. Already signup for docker hub account. (https://hub.docker.com/)
 3. Already signup AWS Free Tier account with already running one EC2 instance with Amazon linux
 
-********************************************************************************************************
-Dockerize Spring Boot App using Maven Plugin and Deploy Spring Boot Application with Docker into AWS EC2 
-********************************************************************************************************
+
+Steps
 
 1. Open any Jaava spring boot applcation.
 

@@ -154,14 +154,14 @@ ENTRYPOINT ["java","-jar","/app.jar"]  // This instruction specifies the default
 			
 26. Type below command to check container is running or not for image.
 
-	Command : sudo docker ps
+	sudo docker ps
 	
 	Note : it should display current running docker image in result.
 	
 27. Go to AWS console, go to EC2,select that linux sytem instance , In 'Descrption' tab
 	click on 'Public IPv4 DNS' and copy that url and paste it in browser.
 		
-		URL : http://ec2-18-204-196-182.compute-1.amazonaws.com/
+    	http://ec2-18-204-196-182.compute-1.amazonaws.com/
 		
 	
 	Note : Try to reload this url in web browser for few times till around 5 mintues.

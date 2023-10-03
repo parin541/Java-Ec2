@@ -23,13 +23,13 @@ Steps
 	ex. awsdemo/Dockerfile
 	
 	
-3. Add Docker command in as Dockerfile.
+3. Add Docker command in as Dockerfile as below
 	
-FROM openjdk:11              // It wi
+FROM openjdk:11              // It will insall automatic Open JDK 11
 
 ARG JAR_FILE=target/*.jar
 
-COPY ${JAR_FILE} app.jar
+COPY ${JAR_FILE} app.jar       //It will copy the jar file from target directory
 
 ENTRYPOINT ["java","-jar","/app.jar"]                  // It will start applcation
 

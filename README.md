@@ -13,7 +13,7 @@ Prerequisites:
 
 Steps
 
-1. Open any Jaava spring boot applcation.
+1. Open any Java spring boot applcation.
 
 
 			
